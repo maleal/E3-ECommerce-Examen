@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Acerca de";
+}
+
+@*@Html.Raw(ViewBag.Message);*@
+
+<h2>@ViewBag.Title</h2>
+@{
+    @*<h3>@HttpUtility.HtmlEncode(ViewBag.Message);</h3>*@
+    <h3>@ViewBag.Message</h3>
+}
+@*<h3>@ViewBag.Message</h3>
+@HttpUtility.HtmlEncode(ViewBag.Message);*@
+<p>Desarrollado por Mario Leal Fuentes.</p>
